@@ -1,0 +1,11 @@
+{
+  "name": "specteraguide",
+  "packageManager": "yarn@3.0.1",
+  "devDependencies": {
+    "vuepress": "next"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
