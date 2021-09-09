@@ -51,6 +51,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@discord-message-components/core@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@discord-message-components/core@npm:0.2.1"
+  dependencies:
+    "@discord-message-components/markdown": ^0.2.0
+    color-rgba: ^2.2.3
+  checksum: 59febcdf6f500e8ebbfd1000937097e1fe9857fb7c84e1edae416c70aa746241611d569ea9507bf82ef0c93bf317a71353d1f111a17e7ed6e20565dcc2d2f7d3
+  languageName: node
+  linkType: hard
+
+"@discord-message-components/markdown@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@discord-message-components/markdown@npm:0.2.0"
+  dependencies:
+    simple-markdown: ^0.7.3
+  checksum: 1348cfd57cd18369f503271d0f1aa7456146b30780e61d508a5dfa890e3904761aaf0ae4e1085eeed9527a10cc1c624301fc3e8e43f9dee26564f74b6892638e
+  languageName: node
+  linkType: hard
+
+"@discord-message-components/vue@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@discord-message-components/vue@npm:0.2.1"
+  dependencies:
+    "@discord-message-components/core": ^0.2.1
+  peerDependencies:
+    vue: ^3.0.6
+  checksum: c7ec78bc52692a4df59e895c9bdf630a7c264697fbdda338576fa32e6dd80a0d41949674c8b97635f7fde57e1b99d4708a852d2e7f11ecdf300dd51b58621a33
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -289,6 +319,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prop-types@npm:*":
+  version: 15.7.4
+  resolution: "@types/prop-types@npm:15.7.4"
+  checksum: ef6e1899e59b876c273811b1bd845022fc66d5a3d11cb38a25b6c566b30514ae38fe20a40f67622f362a4f4f7f9224e22d8da101cff3d6e97e11d7b4c307cfc1
+  languageName: node
+  linkType: hard
+
 "@types/qs@npm:*":
   version: 6.9.7
   resolution: "@types/qs@npm:6.9.7"
@@ -303,10 +340,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@npm:>=16.0.0":
+  version: 17.0.20
+  resolution: "@types/react@npm:17.0.20"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e342bfaa4fe052fc3a445ea49f746f3fd82cfc9c8028eae139a3e0763ead1871f353bd40da2a472f23d2b52544d2781d40e3159c0703e7e2ff08c13f067a3b9c
+  languageName: node
+  linkType: hard
+
 "@types/retry@npm:^0.12.0":
   version: 0.12.1
   resolution: "@types/retry@npm:0.12.1"
   checksum: 5f46b2556053655f78262bb33040dc58417c900457cc63ff37d6c35349814471453ef511af0cec76a540c601296cd2b22f64bab1ab649c0dacc0223765ba876c
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:*":
+  version: 0.16.2
+  resolution: "@types/scheduler@npm:0.16.2"
+  checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
   languageName: node
   linkType: hard
 
@@ -999,6 +1054,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"almost-equal@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "almost-equal@npm:1.1.0"
+  checksum: 6022fbd07dc46fdbcaac24472ab31ed1e9942fc3ae59b24a2df86ab3458a75d5e3e5df5af256f5e0068840308761d760dcd44d5787585df44d5bdb0756526caa
+  languageName: node
+  linkType: hard
+
 "ansi-html@npm:^0.0.7":
   version: 0.0.7
   resolution: "ansi-html@npm:0.0.7"
@@ -1512,10 +1574,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:~1.1.4":
+"color-name@npm:^1.0.0, color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"color-parse@npm:^1.4.1":
+  version: 1.4.2
+  resolution: "color-parse@npm:1.4.2"
+  dependencies:
+    color-name: ^1.0.0
+  checksum: 3ed5916f873e55637c4c3ccf663de64d125c5a445ec081e08f596c625fb8cee32b9c9fc9437073e88d8565cc7ce542d35bef3a0d16bd922839e0c436c3f6f11a
+  languageName: node
+  linkType: hard
+
+"color-rgba@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "color-rgba@npm:2.2.3"
+  dependencies:
+    color-parse: ^1.4.1
+    color-space: ^1.14.6
+  checksum: f0d48b5e8a76c56814833923e032c298ae0dbd1586242916226150bb3d3579537d461cba431c18a3565d8c061442a6824d9ea05968d38571a90feccf8dad7327
+  languageName: node
+  linkType: hard
+
+"color-space@npm:^1.14.6":
+  version: 1.16.0
+  resolution: "color-space@npm:1.16.0"
+  dependencies:
+    hsluv: ^0.0.3
+    mumath: ^3.3.4
+  checksum: 655ae748f81ef96f2a031e0aaa1e6a6dacf23731c4d7845d7d996dbf6a0a7971d533b378a82031b04e7397c55efd34a2fef784a4af1b89d81ff920e8af03fadf
   languageName: node
   linkType: hard
 
@@ -1742,6 +1833,13 @@ __metadata:
   version: 2.6.17
   resolution: "csstype@npm:2.6.17"
   checksum: 6eee5cf81a4b1b2f0e8707b4accd7504f7cceb4b5a496d58c6e4fcea1a70c1443a975e45d722c892d372ffe788fa278ddfe4d70c5f881375f34e48bb99c70ecc
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.0.8
+  resolution: "csstype@npm:3.0.8"
+  checksum: 5939a003858a31a32cbc52a8f45496aa0c2bcb4629b21c5bc14a7ddcac1a3d4adfd655f56843dc14940f60563378e9444af2c9c373b3f212601b9eeb6740b8db
   languageName: node
   linkType: hard
 
@@ -2607,6 +2705,13 @@ fsevents@~2.3.2:
     readable-stream: ^2.0.1
     wbuf: ^1.1.0
   checksum: 2de144115197967ad6eeee33faf41096c6ba87078703c5cb011632dcfbffeb45784569e0cf02c317bd79c48375597c8ec88c30fff5bb0b023e8f654fb6e9c06e
+  languageName: node
+  linkType: hard
+
+"hsluv@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "hsluv@npm:0.0.3"
+  checksum: 2cd6dbe3423de7b8dade6429530388c4473dd3f7ded52d2c395dc99b4a0712c2ab215c8186a38a3617e51f344f555a562ac785db433e7364d75011657d1f17da
   languageName: node
   linkType: hard
 
@@ -3714,6 +3819,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"mumath@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "mumath@npm:3.3.4"
+  dependencies:
+    almost-equal: ^1.1.0
+  checksum: 1c4e9fbfa65541399290db370fa6334b09585600f701b99b947ceca6ab080bcd67dc13c8a48c6a99032f2ce46e4522a5c845bd98f9e59c68424a2aee3cbd0d2f
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.1.23":
   version: 3.1.25
   resolution: "nanoid@npm:3.1.25"
@@ -4668,6 +4782,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"simple-markdown@npm:^0.7.3":
+  version: 0.7.3
+  resolution: "simple-markdown@npm:0.7.3"
+  dependencies:
+    "@types/react": ">=16.0.0"
+  checksum: 165941899fddfaa7c398410f8ce6941109bc86fbc9abb17f8b6be7a9ac8ae36c0af643a3e0adcba60053a9f1eaecdd4016d46d79eef39b8ae04982d2bd52bbc9
+  languageName: node
+  linkType: hard
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
@@ -4790,6 +4913,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "specteraguide@workspace:."
   dependencies:
+    "@discord-message-components/vue": ^0.2.1
     vuepress: next
   languageName: unknown
   linkType: soft

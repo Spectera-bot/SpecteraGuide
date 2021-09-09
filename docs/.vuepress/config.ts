@@ -22,7 +22,10 @@ export default defineUserConfig<DefaultThemeOptions>({
 				text: 'Guide',
 				link: '/guide/'
 			}
-		]
+		],
+		themePlugins: {
+			mediumZoom: false
+		},
 	},
 	plugins: [],
 })
