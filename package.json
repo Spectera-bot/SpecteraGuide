@@ -2,7 +2,8 @@
   "name": "specteraguide",
   "packageManager": "yarn@3.0.1",
   "devDependencies": {
-    "vuepress": "next"
+    "vuepress": "next",
+    "vuepress-vite": "next"
   },
   "scripts": {
     "dev": "vuepress dev docs",

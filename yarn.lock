@@ -382,6 +382,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitejs/plugin-vue@npm:^1.4.0":
+  version: 1.6.2
+  resolution: "@vitejs/plugin-vue@npm:1.6.2"
+  peerDependencies:
+    "@vue/compiler-sfc": ^3.2.6
+  checksum: e9eb5ffb850ac32b30c92520c5bc36fd6a8300e7ddf795b7f0574de493a83da65edda35edb9809f7331ed8da3523088b3c7bc38b656b4ef38067d8cb5da855c8
+  languageName: node
+  linkType: hard
+
 "@vue/compiler-core@npm:3.2.11":
   version: 3.2.11
   resolution: "@vue/compiler-core@npm:3.2.11"
@@ -507,6 +516,29 @@ __metadata:
   version: 3.2.11
   resolution: "@vue/shared@npm:3.2.11"
   checksum: 11a9c4d7f735e134d6b23055c002f2e3e8db0ed7032d4fb4a91f7e4eb720f0e4476c60c0a168dddef11cc8502a484565ef22f01234ec0df70d142cf040e05ece
+  languageName: node
+  linkType: hard
+
+"@vuepress/bundler-vite@npm:2.0.0-beta.25":
+  version: 2.0.0-beta.25
+  resolution: "@vuepress/bundler-vite@npm:2.0.0-beta.25"
+  dependencies:
+    "@vitejs/plugin-vue": ^1.4.0
+    "@vue/compiler-sfc": ^3.2.3
+    "@vue/server-renderer": ^3.2.3
+    "@vuepress/client": 2.0.0-beta.25
+    "@vuepress/core": 2.0.0-beta.25
+    "@vuepress/shared": 2.0.0-beta.25
+    "@vuepress/utils": 2.0.0-beta.25
+    autoprefixer: ^10.3.1
+    connect-history-api-fallback: ^1.6.0
+    postcss: ^8.3.6
+    postcss-csso: ^5.0.1
+    rollup: ^2.56.2
+    vite: ^2.5.0
+    vue: ^3.2.3
+    vue-router: ^4.0.10
+  checksum: 35ede7e625212655690388712bb3cf4219d116b42de83f13d2615e35d43e14df1f5036653495581751f6279539fa244c02d78a3f2284e3361e4ca6cf39ccad49
   languageName: node
   linkType: hard
 
@@ -2181,6 +2213,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild@npm:^0.12.17":
+  version: 0.12.26
+  resolution: "esbuild@npm:0.12.26"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 73efbf4e6457cdec8fbf68ce7dda8fe88475775de36c1d7f5dce4b151651afbbe09ad94fee16810f2aa064e39447b44b30219eb7d168703bd30117cbcbf72cdf
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.12.20, esbuild@npm:^0.12.21":
   version: 0.12.25
   resolution: "esbuild@npm:0.12.25"
@@ -3052,6 +3093,15 @@ fsevents@~2.3.2:
   dependencies:
     binary-extensions: ^2.0.0
   checksum: 84192eb88cff70d320426f35ecd63c3d6d495da9d805b19bc65b518984b7c0760280e57dbf119b7e9be6b161784a5a673ab2c6abe83abb5198a432232ad5b35c
+  languageName: node
+  linkType: hard
+
+"is-core-module@npm:^2.2.0":
+  version: 2.6.0
+  resolution: "is-core-module@npm:2.6.0"
+  dependencies:
+    has: ^1.0.3
+  checksum: 183b3b96fed19822b13959876b0317e61fc2cb5ebcbc21639904c81f7ae328af57f8e18cc4750a9c4abebd686130c70d34a89521e57dbe002edfa4614507ce18
   languageName: node
   linkType: hard
 
@@ -4179,6 +4229,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"path-parse@npm:^1.0.6":
+  version: 1.0.7
+  resolution: "path-parse@npm:1.0.7"
+  checksum: 49abf3d81115642938a8700ec580da6e830dde670be21893c62f4e10bd7dd4c3742ddc603fe24f898cba7eb0c6bc1777f8d9ac14185d34540c6d4d80cd9cae8a
+  languageName: node
+  linkType: hard
+
 "path-to-regexp@npm:0.1.7":
   version: 0.1.7
   resolution: "path-to-regexp@npm:0.1.7"
@@ -4519,6 +4576,26 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+resolve@^1.20.0:
+  version: 1.20.0
+  resolution: "resolve@npm:1.20.0"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: 40cf70b2cde00ef57f99daf2dc63c6a56d6c14a1b7fc51735d06a6f0a3b97cb67b4fb7ef6c747b4e13a7baba83b0ef625d7c4ce92a483cd5af923c3b65fd16fe
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
+  version: 1.20.0
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: bed00be983cd20a8af0e7840664f655c4b269786dbd9595c5f156cd9d8a0050e65cdbbbdafc30ee9b6245b230c78a2c8ab6447a52545b582f476c29adb188cc5
+  languageName: node
+  linkType: hard
+
 "restore-cursor@npm:^3.1.0":
   version: 3.1.0
   resolution: "restore-cursor@npm:3.1.0"
@@ -4558,6 +4635,20 @@ fsevents@~2.3.2:
   bin:
     rimraf: bin.js
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.38.5, rollup@npm:^2.56.2":
+  version: 2.56.3
+  resolution: "rollup@npm:2.56.3"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: e4c5a6e871f0340f18fc795cbb6b76bfbc5827580c443a7c4f5d9f9b1fec8c3d1553dae5e45bd7fc9dea4de56e01c244b1583f8f08f401d2ba81f5eb3ff83101
   languageName: node
   linkType: hard
 
@@ -4915,6 +5006,7 @@ fsevents@~2.3.2:
   dependencies:
     "@discord-message-components/vue": ^0.2.1
     vuepress: next
+    vuepress-vite: next
   languageName: unknown
   linkType: soft
 
@@ -5313,6 +5405,24 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"vite@npm:^2.5.0":
+  version: 2.5.6
+  resolution: "vite@npm:2.5.6"
+  dependencies:
+    esbuild: ^0.12.17
+    fsevents: ~2.3.2
+    postcss: ^8.3.6
+    resolve: ^1.20.0
+    rollup: ^2.38.5
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 6511d35b2427ba4804d387e6ec8c18d03cd2320d2e6ecb7c492f482183f51765e8eda57b44dbb0b5a71cd211a17813e5c73e722357bb9e7735ea4ec5bb97f886
+  languageName: node
+  linkType: hard
+
 "vue-demi@npm:*":
   version: 0.11.4
   resolution: "vue-demi@npm:0.11.4"
@@ -5365,6 +5475,21 @@ fsevents@~2.3.2:
     "@vue/runtime-dom": 3.2.11
     "@vue/shared": 3.2.11
   checksum: 0fb6de88580fa895b9ce7467ba6bbcac4ba15be47eded343617a38ea10c628416af87770fcca5bc0ef14711189ec072c346190709b995797b68a84f28d000530
+  languageName: node
+  linkType: hard
+
+"vuepress-vite@npm:next":
+  version: 2.0.0-beta.25
+  resolution: "vuepress-vite@npm:2.0.0-beta.25"
+  dependencies:
+    "@vuepress/bundler-vite": 2.0.0-beta.25
+    "@vuepress/cli": 2.0.0-beta.25
+    "@vuepress/core": 2.0.0-beta.25
+    "@vuepress/theme-default": 2.0.0-beta.25
+  bin:
+    vuepress: bin/vuepress.js
+    vuepress-vite: bin/vuepress.js
+  checksum: 3adc8e4bcca7aab2a3d6917fcb2e33f97f51c49ffb57df2a453c153722325fe3470e1b68370621fbb42fd5c076b2616faeebea7afcb0978213617dafdfebc597
   languageName: node
   linkType: hard
 

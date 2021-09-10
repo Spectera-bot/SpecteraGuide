@@ -1,10 +1,11 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
+import { defineUserConfig } from 'vuepress-vite'
+import type { DefaultThemeOptions, ViteBundlerOptions } from 'vuepress-vite';
 import sidebar from './sidebar'
 
 export default defineUserConfig<DefaultThemeOptions>({
 	lang: 'en-US',
 	title: 'Spectera\'s Ultimate Guide',
+	bundler: '@vuepress/vite',
 	description: 'The Ultimate Getting-Started Guide For Spectera Bot',
   
 	themeConfig: {
