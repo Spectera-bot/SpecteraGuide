@@ -25,6 +25,7 @@ export default defineClientAppEnhance(({ app }) => {
 		profiles: {
 			user: {
 				author: 'UndiedGFX',
+				roleColor: '#25c059',
 				avatar: 'ug',
 			},
 			bot: {

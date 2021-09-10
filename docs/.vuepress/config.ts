@@ -2,7 +2,7 @@ import { defineUserConfig } from 'vuepress-vite'
 import type { DefaultThemeOptions, ViteBundlerOptions } from 'vuepress-vite';
 import sidebar from './sidebar'
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	lang: 'en-US',
 	title: 'Spectera\'s Ultimate Guide',
 	bundler: '@vuepress/vite',
