@@ -1,15 +1,13 @@
 {
   "name": "specteraguide",
-  "packageManager": "yarn@3.0.1",
+  "packageManager": "yarn@3.1.1",
   "devDependencies": {
+    "@discord-message-components/vue": "^0.2.1",
     "vuepress": "next",
     "vuepress-vite": "next"
   },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
-  },
-  "dependencies": {
-    "@discord-message-components/vue": "^0.2.1"
   }
 }

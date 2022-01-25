@@ -22,6 +22,10 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 			{
 				text: 'Guide',
 				link: '/guide/'
+			},
+			{
+				text: 'Tags',
+				link: '/tags/'
 			}
 		],
 		themePlugins: {
